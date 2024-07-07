@@ -1,0 +1,16 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+server:
+  port: 8081
+  error:
+    include-message: always
+logging:
+  level:
+    com.example.SpringBoot: DEBUG
+management.endpoints.web.exposure.include: '*'
+
+misurls:
+  database:
+    datawarehouse: "https://mibasededatos.com"
+    test: "https://mibasededatostest.com"
